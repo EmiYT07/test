@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Asegura que padding y border no afecten el tamaño del contenido */
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+    text-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Estilos del contenedor principal */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: margin 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Estilos para los formularios */
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea,
+form select,
+form input[type="file"],
+form input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus,
+form input[type="file"]:focus,
+form input[type="date"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+/* Estilos para los botones */
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 12px rgba(0,123,255,0.3);
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilos específicos para las tareas y asignaturas */
+.subject, .task {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.subject:hover, .task:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Estilos para los archivos */
+.file-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    max-width: 200px;
+}
+
+.file-icon {
+    width: 50px; /* Tamaño de los iconos */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.file p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
